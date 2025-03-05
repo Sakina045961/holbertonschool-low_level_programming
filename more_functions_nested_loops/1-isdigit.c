@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - check the digit 
+ * main - check the digit
  *
  * Return: 1 if c is a digit, 0 otherwise
  *
