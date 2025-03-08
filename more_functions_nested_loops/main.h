@@ -5,4 +5,3 @@
 int mul(int a, int b);
 
 #endif /* MAIN_H */
-

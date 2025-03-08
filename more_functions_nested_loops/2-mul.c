@@ -1,18 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
+ * mul - Multiplies two integer
+ * @a: The first digit to multiply
+ * @b: The second digit to multiply
+ * Return: The result of multiplication between a and b
  */
-int main(void)
+
+int mul(int a,  int b)
+
 {
-	int result;
 
-	result = mul(2, 3);
-	printf("%d\n", result);
+	return (a * b);
 
-	return (0);
 }
-
