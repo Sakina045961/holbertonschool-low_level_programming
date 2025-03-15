@@ -1,40 +1,16 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings.
- * @dest: dstination
- * @src: source
- * @n: counter
- *
- * Return: char
+ * swap_int - function that swaps the values of two integers
+ * @a: pointer to the first integer
+ * @b: pointer to the second integer
+ * Return Always 0 (Success)
  */
-
-char *_strncat(char *dest, char *src, int n)
+void swap_int(int *a, int *b)
 {
-	int i = 0, j = 0;
+	int tas;
 
-	while (*(dest + i))
-	{
-		i++;
-	}
-	while (*(src + j))
-	{
-		j++;
-	}
-
-	if (i != 0 && j != 0)
-	{
-		j = 0;
-		while (j < n)
-		{
-			*(dest + i) = *(src + j);
-			i++;
-			j++;
-		}
-	}
-	if (i != 0 && j != 0)
-	{
-		*(dest + i) = 0;
-	}
-	return (dest);
+	tas = *a;
+	*a = *b;
+	*b = tas;
 }
