@@ -33,6 +33,7 @@ char *rot13(char *);
 void print(int);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void set_string(char **s, char *to);
+void set_string(char **s, char *to);
 
 
 #endif
