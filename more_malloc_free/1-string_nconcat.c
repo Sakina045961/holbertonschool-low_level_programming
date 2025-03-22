@@ -5,6 +5,9 @@
  * string_nconcat - concatenates two strings
  * @s1: the first string
  * @s2: the second string
+ * @n: The returned pointer shall point to a newly allocated space in memory,
+ * which contains s1
+ * followed by the first n bytes of s2, and null terminated
  * Return: If the function fails, it should return NULL
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
