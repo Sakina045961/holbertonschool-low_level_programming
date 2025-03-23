@@ -11,8 +11,8 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int len1 = 0; /* string length for src */
-	int len2 = 0; /* string length for dest */
+	int len1 = 0;
+	int len2 = 0;
 	int i;
 
 	while (src[len1] != '\0')
@@ -23,8 +23,9 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		dest[len2] = '\0';
+		dest[len2] = src[i];
 		len2++;
 	}
+	dest[len2] = '\0';
 	return (dest);
 }
